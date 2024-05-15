@@ -5,7 +5,7 @@ tutorial ref.:
 
 --------------------------------------------------------------------------------
 
-1) creare un repository remoto su GitHub
+1) creare un repository remoto PUBLIC su GitHub
 	nel mio caso esiste gia': https://github.com/millo74/millo-java-repo.git
 	(usr: {mail-gmail})
 
@@ -40,4 +40,34 @@ tutorial ref.:
 		# End of https://www.toptal.com/developers/gitignore/api/netbeans
 
 7) pronto per la prima commit
+	tasto dx sul prj > git > commit...
+	(author e committer tengo la mia mail-gmail; includo pom.xml, questo TXT tutorial e il .gitignore)
 	
+8a) come connetto il mio Local Repo con il Remoto che non ho ancora agganciato?
+	Prj/MenuTeams -> Remote -> PUSH
+8b) si apre una Diagol dove lascio ORIGIN e metto il mio URL:
+	https://github.com/millo74/millo-java-repo.git
+	
+	confermo MASTER -> MASTER(A) e invio
+
+	NOTA: se dovesse dare errore, provare prima un FETCH
+
+................................................................................
+se continua a riproporre la schermata di Login a Github, la soluzione e' questa:
+
+I'm not sure if this is the intended behavior but it doesn't work 
+with the password I use to log into github.com via the browser and other applications. 
+I needed to create a Personal Access Token on and use that as the password.
+
+Log into github.com and in the top right click on user name and select Settings
+Scroll down and click on Developer Settings on the left sidebar menu
+On the left sidebar click on Personal Access Tokens
+Click on Generate New Access Token
+I made a note to know it was for netbeans
+Set the expiration you want, and make sure to grant access to all the repo items
+It will generate a token. Copy this token and be aware that you can't access this again but you can regenerate a new one.
+Back in Netbeans when trying to access git remote use the token you just copied instead of the password.
+................................................................................
+
+9) se il PUSH e' andato bene...
+

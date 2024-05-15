@@ -1,0 +1,43 @@
+tutorial ref.:
+	https://www.youtube.com/watch?v=E7WtGODyOb4&list=PLMJfvBwcOl66dbXY-srMtMp1wfnu9xPsu
+	Part 1: Import existing project in Git Repo [Git with Netbeans]
+	Learn4Tarakki
+
+--------------------------------------------------------------------------------
+
+1) creare un repository remoto su GitHub
+	nel mio caso esiste gia': https://github.com/millo74/millo-java-repo.git
+	(usr: {mail-gmail})
+
+2) nei Repositories crearne uno ad hoc per questo tutorial se non esistente
+	(nel mio caso uso quello sopra)
+
+3) in netbeans creo un nuovo progetto java semplice con una classe Main e 1 hello world
+
+4) Inizializzo il progetto sotto GIT
+	Teams -> Git -> initialize repository
+	(si puo fare anche da tasto dx prj, tools, initialize GIT repo)
+
+5) dal sito: https://www.gitignore.io, nella casella di ricerca metto "NetBeans"
+	e mi prendo il testo del .gitignore generato
+
+6) torno NetBeans, nuovo file vuoto ".gitignore" nella root del progetto e ci metto 
+	quanto copiato:
+
+		# Created by https://www.toptal.com/developers/gitignore/api/netbeans
+		# Edit at https://www.toptal.com/developers/gitignore?templates=netbeans
+
+		### NetBeans ###
+		**/nbproject/private/
+		**/nbproject/Makefile-*.mk
+		**/nbproject/Package-*.bash
+		build/
+		nbbuild/
+		dist/
+		nbdist/
+		.nb-gradle/
+
+		# End of https://www.toptal.com/developers/gitignore/api/netbeans
+
+7) pronto per la prima commit
+	
